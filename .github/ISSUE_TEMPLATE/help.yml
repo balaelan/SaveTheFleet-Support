@@ -1,0 +1,38 @@
+name: Player support
+description: Ask a question, report a bug, or suggest an improvement.
+title: "[Support] "
+body:
+  - type: markdown
+    attributes:
+      value: "This request is public. Do not share personal information, passwords, or private screenshots. Younger players should ask a parent or guardian for help."
+  - type: dropdown
+    id: type
+    attributes:
+      label: Request type
+      options:
+        - Bug report
+        - Gameplay question
+        - Suggestion
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version and build
+      placeholder: "For example: 3.3 (20)"
+  - type: input
+    id: device
+    attributes:
+      label: Device and iOS version
+      placeholder: "For example: iPhone 15, iOS 18"
+  - type: input
+    id: mission
+    attributes:
+      label: Theme and mission
+  - type: textarea
+    id: details
+    attributes:
+      label: How can we help?
+      description: "For bugs, include what happened, what you expected, and steps to reproduce it."
+    validations:
+      required: true
